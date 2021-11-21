@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les_2011", "Les_2011.csproj", "{617BAAFA-D274-47E7-80FE-87D0362D0DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Met_2011", "..\Met_2011\Met_2011.csproj", "{1F14B58F-3874-48A5-BBE3-FACE1BA30414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617BAAFA-D274-47E7-80FE-87D0362D0DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617BAAFA-D274-47E7-80FE-87D0362D0DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617BAAFA-D274-47E7-80FE-87D0362D0DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617BAAFA-D274-47E7-80FE-87D0362D0DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F14B58F-3874-48A5-BBE3-FACE1BA30414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F14B58F-3874-48A5-BBE3-FACE1BA30414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F14B58F-3874-48A5-BBE3-FACE1BA30414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F14B58F-3874-48A5-BBE3-FACE1BA30414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A10D588-9CC0-41C4-A20B-CE8827DCB8FB}
+	EndGlobalSection
+EndGlobal
