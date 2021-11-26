@@ -8,15 +8,8 @@ namespace Les_2011
         {
             base.Enqueue(obj);
             if (Count == 4)
-            {
-                if (obj is Draw)
-                {
-                    foreach (int index in (obj as Draw).Winners)
-                    {
-                        Program.data[index].Ratio = 1;
-                    }
-                }
-                Dequeue();
+            {           
+                Dequeue();                
             }
         }
     }

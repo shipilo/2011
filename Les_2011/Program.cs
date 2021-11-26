@@ -13,6 +13,7 @@ namespace Les_2011
         static string path_excel2 = "table2.xlsx";
         static Random random;
         public static Dictionary<int, Student> data;
+        public static LimitQueue<Draw> draws = new LimitQueue<Draw>();
 
         static Program()
         {
@@ -29,9 +30,7 @@ namespace Les_2011
             foreach (int key1 in data.Keys)
             {
                 Console.WriteLine($"{key1}. {data[key1]}");
-            }
-
-            LimitQueue<Draw> draws = new LimitQueue<Draw>();
+            }           
 
             Console.WriteLine("\n1 - начать, 0 - выйти:");
             while (Console.ReadLine() == "1")
@@ -71,12 +70,14 @@ namespace Les_2011
                 Console.WriteLine("\nНажмите интер, чтобы провести розыгрыш.");
                 if (Console.ReadKey().Key == ConsoleKey.Enter)
                 {
+                    double k = 0.5;
                     foreach (Draw draw in draws)
                     {
                         foreach (int index in draw.Winners)
                         {
-                            data[index].Ratio *= 0.5;
+                            data[index].Ratio *= k;
                         }
+                        k *= 0.5;
                     }
 
                     double ratio_sum = 0;
@@ -117,6 +118,14 @@ namespace Les_2011
                 foreach(Draw draw in draws)
                 {
                     Console.WriteLine(draw);                    
+                }
+
+                foreach (Draw draw in draws)
+                {
+                    foreach (int index in draw.Winners)
+                    {
+                        data[index].Ratio = 1;
+                    }
                 }
 
                 Console.WriteLine("1 - продолжить, 0 - выйти:");
